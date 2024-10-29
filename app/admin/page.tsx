@@ -11,6 +11,7 @@ import { useState } from 'react';
 import { FilterMatchMode } from 'primereact/api';
 import { InputText } from 'primereact/inputtext';
 
+
 const Dashboard = () => {
     const { user, logout } = useAuth();
     const router = useRouter();
@@ -134,6 +135,7 @@ const Dashboard = () => {
                 <Column field='email' header='Email' sortable />
                 <Column field='hireDate' header='HireDate' sortable />
             </DataTable>
+          <button><a href="/api">Get Employee List</a></button>
         </div>
     );
 };
